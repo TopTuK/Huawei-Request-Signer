@@ -23,9 +23,6 @@ class HuaweiRequestSigner(object):
         '''
         request_parts = list()
         uri = urlparse(request_url)
-        #host = uri.hostname
-        #path = uri.path
-        #query = uri.query
 
         # step 1 (method)
         request_parts.append(method)
