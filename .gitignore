@@ -175,10 +175,8 @@ pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python
 
-app/
-app/*
+main.py
+main*
 
 .venv/
 .venv/*
-node_modules/
-node_modules/*

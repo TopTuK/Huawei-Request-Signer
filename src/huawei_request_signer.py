@@ -7,10 +7,11 @@ class HuaweiRequestSigner(object):
     '''
     LINK: https://support.huaweicloud.com/eu/devg-apisign/devg-apisign.pdf
     '''
-    def __init__(self) -> None:
+    def __init__(self, request_time: str = None) -> None:
         '''
         '''
-        self.__request_time = datetime.datetime.now(datetime.UTC).strftime('%Y%m%dT%H%M%SZ')
+        self.__request_time = request_time if request_time\
+            else datetime.datetime.now(datetime.UTC).strftime('%Y%m%dT%H%M%SZ')
 
     @property
     def request_time(self) -> str:
